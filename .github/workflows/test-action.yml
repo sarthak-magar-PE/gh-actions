@@ -1,0 +1,11 @@
+name: test workflow
+on: workflow_dispatch  #this is for manually starting this workflow. 
+jobs:
+  test-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple print statement
+        run: echo "testing github actions" 
+      - name: print bye
+        run: echo "done bye" 
+        
